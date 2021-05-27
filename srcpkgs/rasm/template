@@ -1,0 +1,17 @@
+# Template file for 'minipro'
+pkgname=rasm
+version=1.4
+revision=1
+build_style=gnu-makefile
+make_use_env=compliant
+short_desc="RASM powerful Z80 assembler"
+maintainer="jleightcap <jack@leightcap.com>"
+license="MIT"
+homepage="https://github.com/EdouardBERGE/rasm"
+distfiles="https://github.com/EdouardBERGE/rasm/archive/refs/tags/v${version}.tar.gz"
+checksum=3b9531720184b499f8d64a8ed66b966fa918bf0ca0041c620da7c88c8f4db8ce
+
+do_install() {
+	echo "FUCK"
+	vbin rasm.exe rasm
+}
